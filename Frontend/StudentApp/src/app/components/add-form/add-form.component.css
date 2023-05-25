@@ -1,0 +1,15 @@
+.card{
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 5px 10px rgb(138, 138, 136);
+    border-radius: 20px;
+    background:linear-gradient(to right, #96ece5fe , rgb(104, 189, 246));
+}
+
+.field{
+    margin-left: 20%;
+    margin-top: 15px;
+    position: none;
+    width: 200px;
+}
