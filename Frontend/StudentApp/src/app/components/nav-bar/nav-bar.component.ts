@@ -20,4 +20,7 @@ export class NavBarComponent implements OnInit{
   add(){
     this._router.navigate(['add']);
   }
+  table(){
+    this._router.navigate(['table']);
+  }
 }

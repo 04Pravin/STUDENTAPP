@@ -4,7 +4,8 @@
       <mat-card-subtitle>{{student.rollNo}}</mat-card-subtitle>
       <mat-card-subtitle>{{student.department}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="assets\images\student-logo.png" alt="Photo of a Shiba Inu">
+    <img *ngIf="student.gender==='male'" mat-card-image src="assets\images\male.png" alt="Photo of the Student">
+    <img *ngIf="student.gender==='female'" mat-card-image src="assets\images\female.png" alt="Photo of the Student">
     <mat-card-content>
       
     </mat-card-content>

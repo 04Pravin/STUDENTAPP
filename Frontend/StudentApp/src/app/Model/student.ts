@@ -4,6 +4,8 @@ export class Student {
 
         public id:number,
         public name:string,
+        public gender:string,
+        public dob:Date,
         public rollNo:string,
         public department:string,
         public mobileNum:number,

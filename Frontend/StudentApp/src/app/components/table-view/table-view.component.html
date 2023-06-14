@@ -1,1 +1,30 @@
-<p>table-view works!</p>
+<!-- <mat-form-field>
+    <div class="search-hero">
+      <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#61442;  Start searching for a hero by id or name or country">
+    </div>
+   -->
+
+<table>
+    <tr>
+        <td class="header">Roll. No</td>
+        <td class="header">Name</td>
+        <td class="header">Department</td>
+        <td class="header">D.O.B</td>
+        <td class="header">Gender</td>
+        <td class="header">Mobile Number</td>
+        <td class="header">City</td>
+        <td class="header">State</td>
+        <td class="header">Pin code</td>
+    </tr>
+    <tr *ngFor="let student of students">
+        <td>{{student.rollNo}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.department}}</td>
+        <td>{{student.dob | date}}</td>
+        <td>{{student.gender}}</td>
+        <td>{{student.mobileNum}}</td>
+        <td>{{student.city}}</td>
+        <td>{{student.state}}</td>
+        <td>{{student.pincode}}</td>
+    </tr>
+</table>

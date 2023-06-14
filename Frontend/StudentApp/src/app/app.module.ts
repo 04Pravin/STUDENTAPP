@@ -11,7 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DetailviewComponent } from './components/detailview/detailview.component';
 import { AddFormComponent } from './components/add-form/add-form.component';
 import { TableViewComponent } from './components/table-view/table-view.component';
-import { GridViewComponent } from './components/grid-view/grid-view.component';
+// import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,6 @@ import { GridViewComponent } from './components/grid-view/grid-view.component';
     DetailviewComponent,
     AddFormComponent,
     TableViewComponent,
-    GridViewComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +28,7 @@ import { GridViewComponent } from './components/grid-view/grid-view.component';
     BrowserAnimationsModule,
     MaterialsModule,
     HttpClientModule,
+    // Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

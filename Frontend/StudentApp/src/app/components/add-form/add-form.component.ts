@@ -20,7 +20,9 @@ export class AddFormComponent implements OnInit{
     mobileNum: new FormControl(),
     city: new FormControl(''),
     state: new FormControl(''),
-    pincode: new FormControl()
+    pincode: new FormControl(),
+    gender: new FormControl(''),
+    dob: new FormControl()
   })
 
   student!:Student;
