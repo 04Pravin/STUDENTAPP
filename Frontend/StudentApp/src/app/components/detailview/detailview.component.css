@@ -8,3 +8,21 @@
     margin-top: 20px;
 
 }
+
+img{
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+/* .example-header-image {
+    background-image: url('src\assets\images\male.png');
+    background-size: 100%;
+  } */
+
+.delete{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}

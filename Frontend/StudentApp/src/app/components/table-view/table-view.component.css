@@ -1,7 +1,16 @@
 table{
     text-align: center;
     margin: auto;
+    margin-top: 15px;
     border-spacing: 20px;
+    background-color: darkgrey;
+    
+}
+
+.col:hover{
+    transform: scale(1);
+    background-color: honeydew;
+
 }
 
 .header{
