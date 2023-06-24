@@ -1,8 +1,8 @@
-<mat-card class="card" *ngIf="student">
+<!-- <mat-card class="card" *ngIf="student">
     <mat-card-header>
       <img *ngIf="student.gender==='male'" mat-card-image src="assets\images\male.png" alt="Photo of the Student">
       <img *ngIf="student.gender==='female'" mat-card-image src="assets\images\female.png" alt="Photo of the Student">
-      <!-- <div mat-card-avatar class="example-header-image"></div> -->
+      <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>{{student.name}}</mat-card-title>
       <mat-card-subtitle>{{student.rollNo}}</mat-card-subtitle>
       <mat-card-subtitle>{{student.department}}</mat-card-subtitle>
@@ -19,6 +19,70 @@
     </mat-card-actions>
 
 </mat-card>
-     
+-->
 
-  
+<div *ngIf="student" class="border">
+  <img *ngIf="student.gender==='male'" mat-card-image src="assets\images\male.png" alt="Photo of the Student">
+  <img *ngIf="student.gender==='female'" mat-card-image src="assets\images\female.png" alt="Photo of the Student">
+
+  <div class="name">{{student.name}}</div>
+
+  <div class="center">
+    <button mat-raised-button (click)="delete(student.id)" color="warn">
+      <span>Delete</span>
+        <mat-icon>delete</mat-icon>
+    </button>
+        
+    <button mat-raised-button (click)="edit()" color="primary">
+      <span>Edit</span>
+        <mat-icon>edit</mat-icon>
+    </button>  
+  </div><br>
+
+  <table>
+    <tr>
+      <td class="header">Roll. No</td>
+      
+      <td *ngIf="student.rollNo!==null">{{student.rollNo}}</td>
+      <td *ngIf="student.rollNo===null">-</td>
+    </tr>
+    <tr>
+      <td class="header">Department</td>
+      
+      <td >{{student.department}}</td>
+    </tr>
+    <tr>
+      <td class="header">D.O.B</td>
+      
+      <td *ngIf="student.dob!==null">{{student.dob}}</td>
+      <td *ngIf="student.dob===null">-</td>
+    </tr>
+    <tr>
+      <td class="header">Gender</td>
+      
+      <td >{{student.gender}}</td>
+    </tr>
+    <tr>
+      <td class="header">Mobile Number</td>
+      
+      <td >{{student.mobileNum}}</td>
+    </tr>
+    <tr>
+      <td class="header">City</td>
+      
+      <td >{{student.city}}</td>
+    </tr>
+    <tr>
+      <td class="header">State</td>
+      
+      <td >{{student.state}}</td>
+    </tr>
+    <tr>
+      <td class="header">Pin code</td>
+      
+      <td >{{student.pincode}}</td>
+    </tr>
+      
+  </table>
+      
+</div>

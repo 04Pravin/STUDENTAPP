@@ -29,6 +29,10 @@ export class DetailviewComponent implements OnInit{
       })
   }
 
+  edit(){
+    
+  }
+
   delete(id:number){
     this._studentService.delete(id).subscribe(
       {
