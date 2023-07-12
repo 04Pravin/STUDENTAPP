@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { Student } from 'src/app/Model/student';
 import { StudentServiceService } from 'src/app/service/student-service.service';
@@ -11,6 +11,7 @@ import { StudentServiceService } from 'src/app/service/student-service.service';
 export class DashboardComponent implements OnInit{
 students!:Student[];
 student!:Student;
+@Input() flag!:boolean;
   constructor(private _router:Router, private _studentService:StudentServiceService){}
   ngOnInit(){
     this._studentService.getAll().subscribe({
@@ -20,6 +21,8 @@ student!:Student;
       error:()=>console.log('Error while getting all'),
       complete:()=>console.log('Completed get all')
     })
+    this.flag=true;
+    console.log(this.flag);
   }
 
   details(student:Student){

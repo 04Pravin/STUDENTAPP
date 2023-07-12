@@ -54,7 +54,7 @@
     <tr>
       <td class="header">D.O.B</td>
       
-      <td *ngIf="student.dob!==null">{{student.dob}}</td>
+      <td *ngIf="student.dob!==null">{{student.dob|date}}</td>
       <td *ngIf="student.dob===null">-</td>
     </tr>
     <tr>

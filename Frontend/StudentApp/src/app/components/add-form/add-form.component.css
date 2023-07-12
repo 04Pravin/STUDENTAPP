@@ -1,15 +1,44 @@
 .card{
     width: 400px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 80px;
     box-shadow: 5px 10px rgb(138, 138, 136);
     border-radius: 20px;
-    background:linear-gradient(to right, #96ece5fe , rgb(104, 189, 246));
+    /* background:linear-gradient(to right, #96ece5fe , rgb(104, 189, 246)); */
 }
 
 .field{
-    margin-left: 20%;
+    margin-left: 5px;
     margin-top: 15px;
+    /* margin: auto; */
     position: none;
-    width: 200px;
+    width: 300px;
+}
+
+.field3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    margin-top: 80px;
+    align-items: center;
+}
+
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    width:200px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

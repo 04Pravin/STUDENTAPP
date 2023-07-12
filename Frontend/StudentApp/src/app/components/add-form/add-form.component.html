@@ -1,4 +1,4 @@
-<mat-card class="card" >
+<!-- <mat-card class="card" >
     <form [formGroup]="addForm">
         <mat-form-field appearance="fill" class="field">
             <mat-label>Name</mat-label>
@@ -54,4 +54,62 @@
         <button mat-button (click)="cancel()">cancel</button>     
         <button mat-button [disabled]="!addForm.valid" (click)="add(addForm)">submit</button>     
     </mat-card-actions>
-</mat-card>
+</mat-card> -->
+
+<div class="add">
+<form [formGroup]="addForm">
+   <mat-form-field appearance="fill" class="field">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Enter student name" formControlName="name">
+    </mat-form-field>
+            
+    <mat-form-field appearance="fill" class="field" >
+        <mat-label>Roll No</mat-label>
+        <input matInput placeholder="Enter roll no" formControlName="rollNo">
+    </mat-form-field><br>
+            
+    <mat-form-field appearance="fill" class="field" >
+        <mat-label>Department</mat-label>
+            <input matInput placeholder="Enter department" formControlName="department">
+    </mat-form-field>
+            
+    <mat-form-field appearance="fill" class="field" >
+        <mat-label>Mobile number</mat-label>
+        <input matInput placeholder="Enter mobile number" formControlName="mobileNum">
+    </mat-form-field><br>
+          
+    <mat-form-field appearance="fill" class="field" >
+        <mat-label>Date of birth</mat-label>
+        <input matInput type = "date" placeholder="Enter date of birth" formControlName="dob">
+    </mat-form-field>
+            
+    <mat-form-field appearance="fill" class="field" >
+        <mat-label>City</mat-label>
+        <input matInput placeholder="Enter City" formControlName="city">
+    </mat-form-field><br>
+            
+    <mat-form-field appearance="fill" class="field" >
+        <mat-label>State</mat-label>
+        <input matInput placeholder="Enter state" formControlName="city">
+    </mat-form-field>
+            
+    <mat-form-field appearance="fill" class="field" >
+        <mat-label>Pincode</mat-label>
+        <input matInput placeholder="Enter pincode" formControlName="pincode">
+    </mat-form-field><br>
+
+    <div class="field3">
+        <label>Gender: </label><br>
+        <mat-radio-group formControlName="gender">
+            <mat-radio-button value="male">Male</mat-radio-button>
+            <mat-radio-button value="female">Female</mat-radio-button>
+        </mat-radio-group>
+    </div>
+        
+</form>
+</div>
+
+<div class="center">
+    <button mat-raised-button (click)="cancel()" color="warn">cancel</button>     
+    <button mat-raised-button [disabled]="!addForm.valid" (click)="add(addForm)" color="primary">submit</button>
+</div>    

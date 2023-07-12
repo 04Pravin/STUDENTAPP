@@ -1,4 +1,9 @@
+<header>
 <mat-toolbar class="toolbar">
+  <button mat-icon-button matTooltip="back" disabled="{{flag}}" (click)="back()">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+
     <button mat-icon-button matTooltip="home"  (click)="home()">
         <mat-icon>home</mat-icon>
       </button>
@@ -12,3 +17,4 @@
       <mat-icon class="table">table</mat-icon>
     </button>
 </mat-toolbar>
+</header>

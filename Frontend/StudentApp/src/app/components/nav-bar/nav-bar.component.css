@@ -2,3 +2,11 @@
     background-color: #2874f0;
     color: white;
 }
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
